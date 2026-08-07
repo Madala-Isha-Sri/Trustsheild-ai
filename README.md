@@ -1,32 +1,77 @@
-# React + TypeScript + Vite
+ 🛡️ TrustShield AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> AI-Powered Trust & Safety Platform for E-Commerce
 
-Currently, two official plugins are available:
+ 📌 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+TrustShield AI is our AI Build 2026 hackathon project. It helps e-commerce platforms detect fraud, counterfeit products, and fake reviews using multiple AI agents. Our goal is to improve marketplace security and build customer trust.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ ✨ Features
 
-## Expanding the Oxlint configuration
+- 🛡️ Risk Scoring Agent – Detects suspicious transactions.
+- 📸 Authenticity Agent – Identifies counterfeit products.
+- 💬 Review Moderation Agent – Detects fake and AI-generated reviews.
+- 📊 Dashboard – Displays analytics, AI decisions, and audit logs.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+ 🏗️ Architecture
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+            User / Seller
+                  │
+                  ▼
+        TrustShield AI Platform
+                  │
+    ┌─────────────┼─────────────┐
+    │             │             │
+    ▼             ▼             ▼
+Risk Agent   Authenticity   Review Agent
+                 Agent
+    └─────────────┼─────────────┘
+                  │
+                  ▼
+          AI Decision Engine
+                  │
+                  ▼
+        Dashboard & Audit Logs
+
+
+ 🛠️ Tech Stack
+
+Frontend
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+- Framer Motion
+
+Backend (Planned)
+- FastAPI / Spring Boot
+
+AI Models (Planned)
+- XGBoost
+- EfficientNet
+- DistilBERT
+
+
+ 🚀 Current Progress
+
+- ✅ Project planning completed
+- ✅ Architecture designed
+- ✅ Frontend setup completed
+- ✅ Dashboard UI in progress
+- 🔄 Backend and AI integration in progress
+
+
+
+
+
+
+---
+
+## 👥 Team
+
+**Team Name:** *Your Team Name*
+
+Developed for **AI Build 2026 Hackathon** 🚀
