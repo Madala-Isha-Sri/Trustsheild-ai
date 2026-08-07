@@ -15,26 +15,36 @@ TrustShield AI is our AI Build 2026 hackathon project. It helps e-commerce platf
 - 📊 Dashboard – Displays analytics, AI decisions, and audit logs.
 
 
- 🏗️ Architecture
+ ## 🏗️ System Architecture
 
-
-            User / Seller
-                  │
-                  ▼
-        TrustShield AI Platform
-                  │
-    ┌─────────────┼─────────────┐
-    │             │             │
-    ▼             ▼             ▼
-Risk Agent   Authenticity   Review Agent
-                 Agent
-    └─────────────┼─────────────┘
-                  │
-                  ▼
-          AI Decision Engine
-                  │
-                  ▼
-        Dashboard & Audit Logs
+```text
+                         👤 User / Seller
+                                │
+                                ▼
+                     🌐 React Frontend (Dashboard)
+                                │
+                                ▼
+                      ⚡ Backend API (FastAPI)
+                                │
+        ┌───────────────────────┼───────────────────────┐
+        │                       │                       │
+        ▼                       ▼                       ▼
+ 🛡️ Risk Scoring Agent    📸 Authenticity Agent   💬 Review Agent
+        │                       │                       │
+        │                       │                       │
+Transaction Data         Product Images         Reviews & Metadata
+Customer History         Product Details        Review Text
+Payment Details          Brand & Price          User Behaviour
+Device Information       Logo Detection         NLP Analysis
+        │                       │                       │
+        └───────────────────────┼───────────────────────┘
+                                │
+                                ▼
+                     🤖 AI Decision Engine
+                                │
+                                ▼
+                   📊 Dashboard & Audit Logs
+```
 
 
  🛠️ Tech Stack
