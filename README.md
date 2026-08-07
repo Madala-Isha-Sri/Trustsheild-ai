@@ -82,6 +82,6 @@ AI Models (Planned)
 
 ## 👥 Team
 
-**Team Name:** *Your Team Name*
+**Team Number:** *19*
 
 Developed for **AI Build 2026 Hackathon** 🚀
