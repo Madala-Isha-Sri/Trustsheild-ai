@@ -1,0 +1,150 @@
+[
+  {
+    "id": "f4c551e8-42ff-4760-841f-f5eeb887df80",
+    "timestamp": "2026-08-07T22:23:36.749816Z",
+    "agentName": "Risk Scoring",
+    "endpoint": "/risk-score",
+    "inputSummary": {
+      "transactionAmount": 1250.0,
+      "cardType": "mastercard",
+      "deviceMismatch": true,
+      "countryMismatch": true,
+      "refundRate": 0.55,
+      "accountAgeDays": 3,
+      "transactionHour": 3,
+      "isNewDevice": true,
+      "velocityCount24h": 12
+    },
+    "outputSummary": {
+      "riskScore": 74,
+      "riskLevel": "High",
+      "confidence": 74.0,
+      "reason": [
+        "High refund rate",
+        "Device mismatch",
+        "Country origin mismatch",
+        "Unusual transaction amount",
+        "Newly created buyer account",
+        "High 24h transaction velocity"
+      ]
+    },
+    "executionTimeMs": 1598.62,
+    "status": "SUCCESS"
+  },
+  {
+    "id": "b15e9f28-11d4-4118-b83d-95c2d265514b",
+    "timestamp": "2026-08-07T21:48:29.957120Z",
+    "agentName": "Review Moderation",
+    "endpoint": "/review-analysis",
+    "inputSummary": {
+      "reviewText": "This is completely fake and automated text generated for spamming sellers.",
+      "rating": 5.0,
+      "userVerified": false,
+      "userTotalReviews": 45
+    },
+    "outputSummary": {
+      "fakeProbability": 12.2,
+      "spam": false,
+      "sentiment": "Negative"
+    },
+    "executionTimeMs": 61.27,
+    "status": "SUCCESS"
+  },
+  {
+    "id": "5b1498f1-1089-4c1f-89ee-41c7fe7402ff",
+    "timestamp": "2026-08-07T21:47:06.252607Z",
+    "agentName": "Risk Scoring",
+    "endpoint": "/risk-score",
+    "inputSummary": {
+      "transactionAmount": 5000.0,
+      "cardType": "visa",
+      "deviceMismatch": false,
+      "countryMismatch": false,
+      "refundRate": 0.05,
+      "accountAgeDays": 30,
+      "transactionHour": 14,
+      "isNewDevice": false,
+      "velocityCount24h": 1
+    },
+    "outputSummary": {
+      "riskScore": 0,
+      "riskLevel": "Low",
+      "confidence": 100.0,
+      "reason": [
+        "Unusual transaction amount"
+      ]
+    },
+    "executionTimeMs": 2808.82,
+    "status": "SUCCESS"
+  },
+  {
+    "id": "56dec8f3-cd18-4288-9783-c60517efcc69",
+    "timestamp": "2026-08-07T20:11:41.493274Z",
+    "agentName": "Counterfeit Detection",
+    "endpoint": "/counterfeit-detect",
+    "inputSummary": {
+      "input_type": "default_tabular"
+    },
+    "outputSummary": {
+      "prediction": "Counterfeit",
+      "confidence": 99.5,
+      "details": {
+        "model_type": "LightGBM Tabular",
+        "counterfeit_probability": 99.53
+      }
+    },
+    "executionTimeMs": 17.03,
+    "status": "SUCCESS"
+  },
+  {
+    "id": "9b983128-b577-4787-8002-e9254147046e",
+    "timestamp": "2026-08-07T20:11:41.433709Z",
+    "agentName": "Review Moderation",
+    "endpoint": "/review-analysis",
+    "inputSummary": {
+      "reviewText": "AMAZING PRODUCT MUST BUY RIGHT NOW CLICK HERE FOR FREE DISCOUNT 100% BEST PROMO ITEM",
+      "rating": 5.0,
+      "userVerified": false,
+      "userTotalReviews": 1
+    },
+    "outputSummary": {
+      "fakeProbability": 7.1,
+      "spam": false,
+      "sentiment": "Positive"
+    },
+    "executionTimeMs": 8.22,
+    "status": "SUCCESS"
+  },
+  {
+    "id": "89e961bf-caec-43dc-b549-2907f47b7a99",
+    "timestamp": "2026-08-07T20:11:41.396157Z",
+    "agentName": "Risk Scoring",
+    "endpoint": "/risk-score",
+    "inputSummary": {
+      "transactionAmount": 1450.0,
+      "cardType": "visa",
+      "deviceMismatch": true,
+      "countryMismatch": true,
+      "refundRate": 0.45,
+      "accountAgeDays": 3,
+      "transactionHour": 2,
+      "isNewDevice": true,
+      "velocityCount24h": 10
+    },
+    "outputSummary": {
+      "riskScore": 74,
+      "riskLevel": "High",
+      "confidence": 74.0,
+      "reason": [
+        "High refund rate",
+        "Device mismatch",
+        "Country origin mismatch",
+        "Unusual transaction amount",
+        "Newly created buyer account",
+        "High 24h transaction velocity"
+      ]
+    },
+    "executionTimeMs": 1832.45,
+    "status": "SUCCESS"
+  }
+]
