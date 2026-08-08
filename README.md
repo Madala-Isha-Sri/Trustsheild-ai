@@ -19,17 +19,19 @@ TrustShield AI is our **AI Build 2026** hackathon project. It helps e-commerce p
 ## 🖥️ Screen Previews & Modules
 
 ### 📊 Command Center Dashboard
-![Dashboard](./dashboard.png)
+![Command Center Dashboard](./dashboard1.png)
 
 ### 🛡️ Risk Scoring Agent
 ![Risk Scoring Agent](./risk-scoring.png)
 
 ### 📸 Authenticity Agent
-![Authenticity Agent](./authenticity.png)
+![Authenticity Agent](./counterfeit%20detection.png)
 
 ### 💬 Review Moderation Agent
 ![Review Moderation Agent](./review-moderation.png)
 
+### 📜 Audit Logs
+![Audit Logs](./Audit-logs.png)
 ---
 
 ## 🏗️ System Architecture
