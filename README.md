@@ -63,3 +63,8 @@ Device Information       Logo Detection         NLP Analysis
                                 │
                                 ▼
                    📊 Dashboard & Audit Logs
+
+🤝 Project Details
+Team: Team Number 19
+
+Project Name: TrustShield AI
